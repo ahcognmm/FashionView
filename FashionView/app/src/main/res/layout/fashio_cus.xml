@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:fadeScrollbars="true"
+    android:fadingEdge="horizontal|vertical"
+    android:orientation="vertical"
+    android:requiresFadingEdge="horizontal|vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_weight="0.31"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imvMain"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:color/holo_blue_bright" />
+
+        <LinearLayout
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:fadingEdge="horizontal|vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:foregroundGravity="top"
+                android:gravity="center_vertical"
+                android:text="ID"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.31"
+                android:foregroundGravity="center"
+                android:gravity="center_vertical"
+                android:text="Content"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.28"
+                android:gravity="center_vertical"
+                android:text="Cost"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="horizontal|vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:foregroundGravity="top"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.31"
+                android:foregroundGravity="center"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.28"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
